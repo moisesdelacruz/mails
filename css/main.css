@@ -1,0 +1,30 @@
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider img {
+  width: 100%;
+}
+
+.slider button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  background: transparent;
+  color: white;
+  border: none;
+}
+
+.slider button:focus {
+  outline: none;
+}
+
+.slider button:first-of-type {
+  left: 0;
+}
+
+.slider button:last-of-type {
+  right: 0;
+}
