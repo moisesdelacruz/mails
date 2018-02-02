@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Mails</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,700" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
   </head>
   <body>
     <header>
@@ -20,6 +24,7 @@
       </nav>
     </header>
     <section class="slider">
+      <h1>Student Mails</h1>
       <img class="mySlides" src="images/img_chicago.jpg" />
       <img class="mySlides" src="images/img_la.jpg" />
       <img class="mySlides" src="images/img_ny.jpg" />
@@ -27,24 +32,27 @@
       <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
     </section>
     <section class="options">
-      <article class="item">
-        <figure class="item-image">
-          <img src="" alt="Image Item">
-        </figure>
-        <h3 class="title-item">Email Con Nombre Personalizado</h3>
-      </article>
-      <article class="item">
-        <figure class="item-image">
-          <img src="" alt="Image Item">
-        </figure>
-        <h3 class="title-item">Tienda</h3>
-      </article>
-      <article class="item">
-        <figure class="item-image">
-          <img src="" alt="Image Item">
-        </figure>
-        <h3 class="title-item">Review</h3>
-      </article>
+      <h2>Algún Título</h2>
+      <div class="items">
+        <article class="item">
+          <div class="icon">
+            <i class="material-icons blue">mail</i>
+          </div>
+          <h3 class="title-item">Emails Personalizado</h3>
+        </article>
+        <article class="item">
+          <div class="icon">
+            <i class="material-icons red">shopping_cart</i>
+          </div>
+          <h3 class="title-item">Tienda</h3>
+        </article>
+        <article class="item">
+          <div class="icon">
+            <i class="material-icons green">stars</i>
+          </div>
+          <h3 class="title-item">Review</h3>
+        </article>
+      </div>
     </section>
     <script type="text/javascript" src="js/slider.js"></script>
   </body>

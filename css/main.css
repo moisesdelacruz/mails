@@ -1,6 +1,60 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding: .5em 1em;
+}
+
+header .logotipo {
+  display: inline-block;
+}
+
+header .menu {
+  display: inline-block;
+  float: right;
+}
+
+header .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+header .menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 1em .5em;
+}
+
 .slider {
   position: relative;
   overflow: hidden;
+  height: 50vh;
+}
+
+.slider h1 {
+  color: white;
+  font-size: 45px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  top: calc(50% - 1.2em);
+  text-shadow: 0 0 100px #fff, -1px 0 0 #000;
 }
 
 .slider img {
@@ -27,4 +81,39 @@
 
 .slider button:last-of-type {
   right: 0;
+}
+
+.options h2 {
+  font-size: 32px;
+  text-align: center;
+  padding: .5em;
+}
+
+.items {
+  display: flex;
+}
+
+.items .item {
+  display: flex;
+  cursor: pointer;
+  width: 100vw;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.items .item:hover {
+  background-color: rgba(128, 128, 128, 0.44);
+}
+
+.items .item .icon, .title-item {
+  display: flex;
+  justify-content: center;
+}
+
+.items .item .icon i {
+  font-size: 5em;
+}
+
+.items .item .title-item {
+  font-size: 16px;
 }
